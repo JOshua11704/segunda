@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+.Mensaje_error {
+    font-size: 15px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.imagen_error {
+    margin-bottom: 0;
+    display: none;
+}
+
+.Alerta_global {
+    height: 40px;
+    line-height: 40px;
+    width: 25rem;
+    margin-bottom: 0;
+    display: none;
+    background-color: #F66868;
+    padding: 0px 18px;
+    border-radius: 3px;
+    color: black;
+}
+
+.Alerta_global p {
+    margin: 0;
+}
+
+
+/* Cuando sea incorrecto aparezcan con display block */
+
+.Mensaje_error-activado {
+    font-size: 15px;
+    margin-bottom: 0;
+    display: block;
+}
+
+.imagen_error-activado {
+    margin-bottom: 0;
+    display: block;
+}
+
+.Alerta_global-activado {
+    margin-bottom: 0;
+    display: block;
+}
+
+
+/* estilos que cuando el usario este digitando algo mal entonces aparezca de color rojo el imput y el mensaje */
+
+.imput_completo-incorrecto .formulario__input {
+    border: 2px solid #bb2929;
+}
+
+
+/* mediaquaries */
+
+
+/* mediaquaries 800px */
+
+@media screen and (max-width: 467px) {
+    .Expandir_imagen,
+    .formulario__input {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        margin: 0%;
+    }
+    .mensaje_glob_error {
+        padding: 0px 18px;
+    }
+    .Contenedor {
+        margin-left: 5%;
+    }
+    .boton_form {
+        margin-left: 5%;
+        padding: 0px 18px;
+    }
+}
+
+@media screen and (max-width: 607px) {
+    .mensaje_glob_error {
+        padding: 0px 18px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .Contenedor {
+        margin-left: 5%;
+    }
+}
