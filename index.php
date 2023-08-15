@@ -86,7 +86,7 @@
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" ruole="button">Vacunadores y Vacunas</a>
                     <ul class="dropdown-menu dropdown-menu-end">
                         <li><a class="dropdown-item" href="./vista/vacunadores.php">Vacunadores</a></li>
-                        <li><a class="dropdown-item" href="./propie.php">Vacunas</a></li>
+                        <li><a class="dropdown-item" href="./vista/vacunas.php">Vacunas</a></li>
                     </ul>
     
     

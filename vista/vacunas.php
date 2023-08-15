@@ -77,23 +77,24 @@
                     <li class="nav-item p-5">
                         <a class="nav-link" href="../index.php">INICIO</a>
                     </li>
-                    
+
                     <li class="nav-item p-5">
-                        <a class="nav-link" href="../index.php">HISTORIAL</a>
+                        <a class="nav-link" href="./historial_vacs.php">HISTORIAL</a>
                     </li>
                     
+
                     <li class="nav-item dropdown p-5">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" ruole="button">Mascotas y vacuna</a>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" ruole="button">Mascotas y vacunadores</a>
                     <ul class="dropdown-menu dropdown-menu-end">
                         <li><a class="dropdown-item" href="./mascotas.php">Mascotas</a></li>
-                        <li><a class="dropdown-item" href="./propie.php">vacuna</a></li>
+                        <li><a class="dropdown-item" href="./propie.php">vacunadores</a></li>
                     </ul>
                 </li>
     
                 <li class="nav-item dropdown p-5">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" ruole="button">vacuna y Vacunas</a>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" ruole="button">Vacunadores y Vacunas</a>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="./vacuna.php">vacuna</a></li>
+                        <li><a class="dropdown-item" href="./vacunadores.php">Vacunadores</a></li>
                         <li><a class="dropdown-item" href="./vacunas.php">Vacunas</a></li>
                     </ul>
 

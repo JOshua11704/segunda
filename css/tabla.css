@@ -145,3 +145,6 @@ tr:hover td {
     background-color: #374643;
     color: white;
 }
+.fecha-roja {
+    color: red;
+}
