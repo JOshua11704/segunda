@@ -7,10 +7,12 @@
 <?php
     $sql = $con -> prepare("SELECT * FROM historial, vacunadores, animales, vacunas WHERE historial.id_animal = animales.id_animal AND historial.id_vacuna = vacunas.id_vacuna AND historial.id_vacunador = vacunadores.id_vacunador ORDER BY historial.fecha ASC");
     $sql -> execute();
-
+    
     date_default_timezone_set("America/Bogota");
     $fecha_hora = date('Y-m-d');
     
+   
+        
 ?>
 
 
@@ -30,79 +32,7 @@
     <title>Vacunas</title>
 
 </head>
-<body>
-    
-    <div class="contenedor">    
-        <header>
-            <div class="encabezado">
-    
-                <div class="encabezado_a1">
-                  <a href="./index.php" class="active"><img src="../imagenes/logo.JPG" alt="logo de inventario sena"></a>
-                </div>
-                
-                <div class="encabezado_a2">
-                    <h1>VACUNACIONES</h1>
-                </div>
-                
-                <!-- <div class="encabezado_a3">
-                    <img src="../imagenes/useredit.png" alt="perfil">
-                    <h4>Mi Perfil</h4>
-                </div> -->
-    
-            </div>    
-    
-    
-            
-           
-<!-- barra de navegacion -->
-<nav class="navbar navbar-expand-md">
-        <div class="barra_nav container-fluid navbar-nav">
-    
-    
-    
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <div class="menu_m1 nav-item">
-                    <!-- <form method="POST">
-                        <input type="submit" value="Cerrar sesión" name="cerrar"/>
-                    </form> -->
-                    <img src="../imagenes/agregar_usuario.png" alt="Cerrar">
-                </div>
-                
-                <ul class="navbar-nav ms-auto">
-    
-                    <li class="nav-item p-5">
-                        <a class="nav-link" href="../index.php">INICIO</a>
-                    </li>
-
-                    <li class="nav-item p-5">
-                        <a class="nav-link" href="./historial_vacs.php">HISTORIAL</a>
-                    </li>
-                    
-
-                    <li class="nav-item dropdown p-5">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" ruole="button">Mascotas y vacunadores</a>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="./mascotas.php">Mascotas</a></li>
-                        <li><a class="dropdown-item" href="./propie.php">vacunadores</a></li>
-                    </ul>
-                </li>
-    
-                <li class="nav-item dropdown p-5">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" ruole="button">Vacunadores y Vacunas</a>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="./vacunadores.php">Vacunadores</a></li>
-                        <li><a class="dropdown-item" href="./vacunas.php">Vacunas</a></li>
-                    </ul>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class=" d-flex justify-content-center align-items-center ">
+<div class=" d-flex justify-content-center align-items-center ">
         <div class="main-container rounded-5 text-secondary" style="width: 85rem">
 
             <h2 class="text-center text-dark fs-1 fw-bold" style="margin-right: 25%;">Historial de Vacunas</h2>
@@ -128,6 +58,7 @@
                 </div>
             </div>
             <br><br><br>
+
             <table style="border:#000 solid 1px">
                 <tr>
                     <thead>
@@ -196,7 +127,6 @@
 
 
 
-
                          
 
                             
@@ -235,8 +165,5 @@
 <body>
 </html>
 
-
-
-    
 
 
